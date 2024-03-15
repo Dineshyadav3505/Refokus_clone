@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'Satoshi Variable';
+  color:#fff;
+  a{
+    font-family: "Satoshi Variable";
+    cursor: none;
+
+  }
+
+  .button{
+    cursor: none;
+  }
+}
