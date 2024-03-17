@@ -1,9 +1,11 @@
 import React from 'react';
 import Button from '../Button';
+import { motion } from 'framer-motion';
 
-const Card = ({width, h2 , h1, but, h6 ,hover }) => {
+const Card = ({width, h2 , h1, but, h6 ,hover="false" }) => {
   return (
-    <div className={`max-w-screen-xl bg-zinc-800 p-5 rounded-xl hover:${hover} ${width}`}>
+    
+    <motion.div whileHover={{backgroundColor: hover===true ? "#7442FF" : null}} className={`max-w-screen-xl bg-zinc-800 p-5 rounded-xl hover:${hover} ${width}`}>
         <div className="w-full">
             <div className="flex items-center justify-between">
                 <h3 className='text-[.9vw] capitalize ' href="/">{h6}</h3>
@@ -24,7 +26,7 @@ const Card = ({width, h2 , h1, but, h6 ,hover }) => {
              }
         </div>
       
-    </div>
+    </motion.div>
   );
 }
 

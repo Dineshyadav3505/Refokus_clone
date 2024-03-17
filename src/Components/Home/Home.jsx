@@ -10,6 +10,7 @@ import Marquess2 from '../Marquess2'
 import HomeProdects from './HomeProdects'
 import HomeLandingPage from './HomeLandingPage'
 import CustomCursor from '../Cursor'
+import HomeMar from './HomeMar'
 
 const Home = () => {
   return (
@@ -31,13 +32,10 @@ const Home = () => {
     <HomeProdects/>
 
     <div className=" w-full flex justify-center ">
-      <Button title='View more Work'/>
+      <Button title='View More Work'/>
     </div>
 
-    <div className=" my-20">
-      <Marquess2/>
-      <Marquess2/>
-    </div>
+    <HomeMar/>
 
     <HomePage3/>
 
